@@ -1,0 +1,9 @@
+{
+  "name": "Brochure Site",
+  "description": "A maintenance free site for small business.",
+  "author": "Chad Person <chad@bowtie.io>",
+  "version": "0.0.1",
+  "image_url": null,
+  "example_link": "//brochure.bowtied.io",
+  "docs_link": "/docs/#projects"
+}
