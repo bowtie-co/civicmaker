@@ -6,9 +6,7 @@ body {
 
 header {
   padding: 18px;
-  border-bottom: 1px solid #ddd;
-  background: rgba(255, 255, 255, 0.7);
-  position: fixed;
+  position: static;
   z-index: 99;
   width: 100%; }
   header ul {
@@ -20,6 +18,8 @@ header {
       display: inline-block;
       margin-top: 12px;
       margin-right: 30px; }
+  header a {
+    color: #FFF; }
 
 footer {
   padding: 120px 0;
@@ -46,11 +46,16 @@ footer {
       text-align: left; }
 
 #hero {
-  padding-top: 220px;
-  padding-bottom: 220px; }
+  background: url(/img/Capitol.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  margin-top: -200px; }
   #hero h1 {
     text-align: center;
-    font-size: 4em; }
+    font-size: 4em;
+    color: #FFF; }
   #hero p.lead {
     font-size: 1.8em;
     font-weight: 200;
@@ -63,27 +68,46 @@ footer {
   padding: 12px 0; }
 
 #cta-bar {
-  background: #ddd;
-  padding: 36px 0; }
+  padding: 5px 0;
+  background: #bbb; }
   #cta-bar p {
     margin-top: 12px; }
 
-#web-design, #alerts, #hr {
-  padding: 130px 0;
+#web-design, #hr {
+  padding: 50px 0;
   border-bottom: 1px solid #999; }
-  #web-design .copy h2, #alerts .copy h2, #hr .copy h2 {
+  #web-design .copy h2, #hr .copy h2 {
     font-size: 2.5em;
     line-height: 140%; }
-  #web-design .copy p.lead, #alerts .copy p.lead, #hr .copy p.lead {
+  #web-design .copy p.lead, #hr .copy p.lead {
     padding-top: 30px;
     padding-right: 80px;
     font-size: 1.5em;
     font-weight: 200;
     color: #999; }
-  #web-design .copy ul li, #alerts .copy ul li, #hr .copy ul li {
+  #web-design .copy ul li, #hr .copy ul li {
     padding: 30px 80px 0 0;
     color: #666; }
-  #web-design .copy p.btn-holder, #alerts .copy p.btn-holder, #hr .copy p.btn-holder {
+  #web-design .copy p.btn-holder, #hr .copy p.btn-holder {
+    margin-top: 40px; }
+
+#alerts {
+  background: #bbb;
+  padding: 50px 0;
+  border-bottom: 1px solid #999; }
+  #alerts .copy h2 {
+    font-size: 2.5em;
+    line-height: 140%; }
+  #alerts .copy p.lead {
+    padding-top: 30px;
+    padding-right: 80px;
+    font-size: 1.5em;
+    font-weight: 200;
+    color: #fff; }
+  #alerts .copy ul li {
+    padding: 30px 80px 0 0;
+    color: #666; }
+  #alerts .copy p.btn-holder {
     margin-top: 40px; }
 
 #proof {
@@ -130,10 +154,13 @@ footer {
     font-size: 3em;
     text-align: center; }
   #about-body p {
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-weight: 200;
     color: #666;
-    text-align: center; }
+    text-align: left; }
+
+#about-alt {
+  background: #ddd; }
 
 #case-studies {
   text-align: center; }
