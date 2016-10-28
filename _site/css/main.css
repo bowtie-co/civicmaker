@@ -22,7 +22,7 @@ header {
     color: #FFF; }
 
 footer {
-  padding: 120px 0;
+  padding: 20px 0;
   text-align: center; }
   footer .icons {
     padding: 50px 0; }
@@ -238,6 +238,6 @@ footer {
     text-align: right; }
 
 #form-holder {
-  padding: 100px; }
+  padding: 50px; }
   #form-holder .form-row {
     margin-bottom: 30px; }
