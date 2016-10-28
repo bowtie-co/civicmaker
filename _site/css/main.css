@@ -138,9 +138,13 @@ footer {
     margin-top: 30px; }
 
 #stats {
+  padding: 30px;
   border-bottom: 1px solid #ddd; }
+  #stats h2 {
+    font-size: 3em;
+    text-align: center; }
   #stats .stat {
-    padding: 40px;
+    padding: 20px 40px;
     text-align: center; }
     #stats .stat p.number-lg {
       font-size: 5em;
@@ -149,18 +153,23 @@ footer {
       font-size: 1.3em; }
 
 #about-body {
-  padding: 100px; }
+  padding: 50px 0; }
   #about-body h2 {
     font-size: 3em;
     text-align: center; }
   #about-body p {
     font-size: 1.3em;
     font-weight: 200;
-    color: #666;
-    text-align: left; }
+    color: #777;
+    text-align: left;
+    padding: 0px 50px 25px 50px; }
+  #about-body .row {
+    margin: 0px;
+    padding: 0px; }
 
 #about-alt {
-  background: #ddd; }
+  background: #ddd;
+  padding: 30px 0 0 0; }
 
 #case-studies {
   text-align: center; }
@@ -177,7 +186,7 @@ footer {
       padding: 20px; }
 
 #service-intro {
-  padding: 100px;
+  padding: 50px;
   border-bottom: 1px solid #ddd; }
   #service-intro h2 {
     text-align: center;
@@ -188,8 +197,12 @@ footer {
     font-size: 1.6em;
     font-weight: 200; }
 
+#Life-Cycle {
+  padding: 50px;
+  background: #ddd; }
+
 #service-features {
-  padding: 100px; }
+  padding: 50px; }
   #service-features h2 {
     text-align: center;
     margin-bottom: 60px; }
@@ -200,7 +213,8 @@ footer {
       border: 3px solid #ddd; }
     #service-features .feature h3 {
       text-align: center;
-      margin-top: 40px; }
+      margin-top: 20px;
+      font-size: 1.2em; }
     #service-features .feature p {
       text-align: center;
       padding: 30px; }
