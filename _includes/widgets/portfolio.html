@@ -1,0 +1,137 @@
+<!-- Portfolio -->
+<link rel="stylesheet" type="text/css" href="/css/components/portfolio.css"/>
+
+<div class="row portfolios clearfix">
+<!--access portfolio collection-->
+{% assign portfolio = site.portfolios %}
+  {% for item in portfolio %}
+
+  <!--Capture this loop index so carousel works -->
+  {% capture parent_loop %}{{ forloop.index }}{% endcapture %}
+
+  <!--Create new row if there are more than two galleries-->
+  {% capture thecycle %}{% cycle '1', '2', %}{% endcapture %}
+  {% if thecycle == '1' and forloop.first == false %}
+</div>
+<div class="row portfolios clearfix">
+  {% endif %}
+  <div class="col-sm-6 nopadding">
+    <!-- Triggers Modal -->
+    <a href="#{{ item.title }}" class="portfolio-link" data-toggle="modal" data-target="#profile{{ parent_loop }}">
+      <!-- Triggers on hover color with '+' -->
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+          <i class="fa fa-plus fa-2x"></i>
+        </div>
+      </div>
+      <!-- Portfolio Cover Image -->
+      <div class="portfolio-cover-img"><img src="{{ item.images[0] }}" alt="{{ item.title }}"/></div>
+    </a>
+    <!-- Portfolio Cover Caption -->
+    <div class="portfolio-caption">
+      <h3 class="title">{{ item.title }}</h3>
+      <h4 class="sub-title">{{ item.subtitle }}</h4>
+    </div>
+
+    <!-- begin modal content-->
+    <div class="portfolio-modal modal modal-fullscreen fade" id="profile{{ parent_loop }}" tabindex="-1" role="dialog" aria-labelledby="#" aria-hidden="true">
+      <div class="portfolio-modal modal-size modal-dialog">
+        <div class="portfolio-modal modal-content">
+
+          <!-- Close Modal Button -->
+          <div class="portfolio-modal modal-body">
+            <button type="button" class="portfolio-modal close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+
+              <!--Modal Title-->
+              <div class="title">
+                <h1 class="title">{{ item.title }}</h1>
+                <h3 class="sub-title">{{ item.subtitle }}</h3>
+              </div>
+
+              <!--Modal Gallery-->
+              <!--Makes the gallery take up the whole modal if you have no description-->
+            {% if item.content.size == 0 %}
+              <div class="col-md-12">
+            {% elsif item.scroll_gallery == true %}
+              <div class="col-md-12">
+            {% else %}
+              <div class="col-md-8">
+            {% endif %}
+                <div id="product">
+                  <div class="carousel slide product-slide" id="product-gallery-{{ parent_loop }}">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner cont-slider">
+                      {% if item.scroll_gallery == true %}
+                      <!--activate scrolling gallery-->
+                        {% for image in item.images %}
+                        <div class="item active">
+                          <img alt="" title="" src="{{ image }}">
+                        </div>
+                        <br>
+                        {% endfor %}
+                      {% else %}
+                      <!--activate carousel gallery-->
+                        {% for image in item.images %}
+                          {% if forloop.first %}
+                          <div class="item active">
+                            <img alt="" title="" src="{{ image }}">
+                          </div>
+                          {% else %}
+                          <div class="item">
+                            <img alt="" title="" src="{{ image }}">
+                          </div>
+                          {% endif %}
+                        {% endfor %}
+                      {% endif %}
+                    </div>
+                    <!-- Indicators -->
+                    {% if item.scroll_gallery == true %}
+                      <!--not displaying carousel. item.scroll_gallery == true-->
+                    {% else %}
+                    <!--activate carousel indicators-->
+                      <ol class="carousel-indicators">
+                        {% for image in item.images %}
+                          {% if forloop.first %}
+                          <li class="active" data-slide-to="0" data-target="#product-gallery-{{ parent_loop }}">
+                            <img alt="" src="{{ image }}">
+                          </li>
+                          {% else %}
+                          <li class="" data-slide-to="{{forloop.index | minus: 1 }}" data-target="#product-gallery-{{ parent_loop }}">
+                            <img alt="" src="{{ image }}">
+                          </li>
+                          {% endif %}
+                        {% endfor %}
+                      </ol>
+                    {% endif %}
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  $('.carousel').carousel({
+                    interval: false
+                  });
+                </script>
+              </div>
+
+              <!--Modal Description-->
+              {% if item.content.size == 0 %}
+                <!--Display nothing. There is no content and make the photo gallery col-md-12-->
+              {% elsif item.scroll_gallery == false %}
+                <div class="col-md-4">
+                  {{item.content}}
+                </div>
+              {% else %}
+              <div class="row">
+                <div class="col-md-12">
+                  {{item.content}}
+                </div>
+              </div>
+              {% endif %}
+            </div><!-- end row -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

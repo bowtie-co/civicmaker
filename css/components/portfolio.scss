@@ -1,0 +1,214 @@
+---
+# this front matter renders the file as css
+---
+
+/*******************************************************/
+/*** portfolios ***/
+/*******************************************************/
+
+.portfolios {
+	margin: 40px 0 0 0;
+	[class*="col"] {
+		min-height:240px;
+	}
+
+	[class*="col"] .inner.outline {
+		border:1px solid #DDDDDD;
+	}
+
+	h3 {
+		font-size:24px;
+		color:#426977;
+	}
+
+	p {
+		margin:20px 0 0 0;
+		text-align:center;
+	}
+	.sub-title {
+		margin: 2px 0 15px 0;
+	}
+	i {
+		width: 400px;
+		font-size:80px;
+		line-height:1;
+		color:#34495E;
+		display: block;
+		margin: 10px auto !important;
+		float: none;
+		text-align: center;
+	}
+	.portfolio-cover-img {
+		object-fit: cover;
+		max-width: 95%;
+		font-size:80px;
+		line-height:1;
+		color:#34495E;
+		display: block;
+		margin: 10px auto !important;
+		float: none;
+		text-align: center;
+		img {
+			max-height: 350px !important;
+		}
+	}
+}
+
+section .portfolios [class*="col"] .inner {
+	background-color:#fff;
+}
+
+section.alt .portfolios [class*="col"] .inner {
+	background-color:#transparent;
+}
+
+section.dark .portfolios [class*="col"] .inner {
+	background-color:#000;
+}
+
+.portfolios .sub-title {
+	color: #999999;
+}
+
+
+.nopadding { //used to remove padding from bootstraps .col-*-*
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.portfolio-link {
+	display: block;
+	.portfolio-hover {
+		transition: all ease .5s;
+		background: rgba(243, 156, 18, .8);
+		opacity: 0;
+		position: absolute;
+		width: 96%;
+		height: calc(100% - 80px);
+		margin-left:2%;
+		&:hover {
+			opacity: 1;
+		}
+		&:active {
+			background: rgba(243, 156, 18, 1);
+		}
+
+		.portfolio-hover-content i {
+			color: #fff;
+			position: absolute;
+			margin: 0 0 15px 0;
+			top: 45%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%)
+
+		}
+	}
+}
+
+
+.portfolio-caption {
+	height:50px;
+	margin-bottom: 20px;
+	h3 {
+		margin-bottom: 0px !important;
+	}
+}
+
+
+/*******************************************************/
+/*** portfolios modal***/
+/*******************************************************/
+
+
+.portfolio-modal {
+	.close {
+		position: fixed;
+		right: 2%;
+		font-size: 4em;
+		transition: all .2s ease-in-out;
+		&:hover {
+			color: red;
+			transform: scale(1.1);
+		}
+	}
+	.modal-body .title {
+		margin-top: 55px;
+	}
+	.modal-fullscreen {
+		background: #fff;
+	}
+	.modal-content {
+		background: transparent;
+		border: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+//classes added open opening a modal
+.modal-backdrop.modal-backdrop-fullscreen {
+	background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+	opacity: .97;
+	filter: alpha(opacity=97);
+}
+
+
+@media screen and (min-width: 768px) {
+
+	.portfolio-modal.modal-size.modal-dialog  {
+		width:80%;
+		height: 100%;
+
+	}
+
+}
+
+
+/*******************************************************/
+/*** Photo Gallery Carousel ***/
+/*******************************************************/
+
+/* Indicators list style */
+.portfolio-modal {
+	.product-slide .carousel-indicators {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		min-height: 60px !important;
+		position: relative;
+		bottom: -5px;
+
+	}
+	.product-slide .carousel-indicators li {
+		object-fit: cover;
+		max-height: 200px;
+		max-width: 300px;
+		border-radius: 0;
+		float: left;
+		height: auto;
+		margin-bottom: 5px;
+		margin-left: 0;
+		margin-right: 2px !important;
+		margin-top: 0;
+		width: calc(25% - 2px);
+	}
+	.product-slide .carousel-indicators img {
+		border: 2px solid #FFFFFF;
+		float: left;
+		left: 0;
+		// height: 54px;
+		// width: 100px;
+	}
+	.product-slide .carousel-indicators .active img {
+		border: 2px solid #333;
+		opacity: 0.6;
+	}
+	.active > img { //this centers the active image
+		margin-left: auto  !important;
+		margin-right: auto  !important;
+	}
+}

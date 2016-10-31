@@ -5,8 +5,8 @@
 title: CivicMaker - Municipal Website Builder
 email: info@bowtie.io
 description: > # this means to ignore newlines until "baseurl:"
-  Creating the future of government websites while 
-  enhancing the digital experience for citizens. 
+  Creating the future of government websites while
+  enhancing the digital experience for citizens.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://civicmaker.com" # the base hostname & protocol for your site
 twitter_username: bowtie_io
@@ -16,3 +16,9 @@ github_username:  jekyll
 markdown: kramdown
 
 port: 3001
+
+
+# define collection objects
+collections:
+  timeline:
+    output: false
