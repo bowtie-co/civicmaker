@@ -1,7 +1,7 @@
 ---
-title: '2014-2016'
-subtitle:  'And Today I...'
+title: '2017 & Beyond'
+subtitle:  'The Future'
 img_path: '/img/artist/purple200x200.png'
 ---
 
-Start your next website with Agency theme and make it your own! Every section is well documented so you won't be left confused
+CivicMaker is leading the future of municipal websites.

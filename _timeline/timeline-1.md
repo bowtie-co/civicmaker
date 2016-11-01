@@ -1,6 +1,6 @@
 ---
-title: '2009-2010'
-subtitle:  'A New Beginning'
+title: '2013'
+subtitle:  'BowTie'
 img_path: '/img/artist/yellow200x200.png'
 ---
-The timeline serves as a great section to list out your accomplishments. It provides a bit of history as to who you are.
+BowTie is developed to provide safer, faster, zero maintenance sites.

@@ -74,6 +74,7 @@ footer {
     margin-top: 12px; }
 
 #web-design, #hr {
+  background: #bbb;
   padding: 50px 0;
   border-bottom: 1px solid #999; }
   #web-design .copy h2, #hr .copy h2 {
@@ -84,7 +85,7 @@ footer {
     padding-right: 80px;
     font-size: 1.5em;
     font-weight: 200;
-    color: #999; }
+    color: #fff; }
   #web-design .copy ul li, #hr .copy ul li {
     padding: 30px 80px 0 0;
     color: #666; }
@@ -92,7 +93,7 @@ footer {
     margin-top: 40px; }
 
 #alerts {
-  background: #bbb;
+  background: #fff;
   padding: 50px 0;
   border-bottom: 1px solid #999; }
   #alerts .copy h2 {
@@ -103,12 +104,17 @@ footer {
     padding-right: 80px;
     font-size: 1.5em;
     font-weight: 200;
-    color: #fff; }
+    color: #999; }
   #alerts .copy ul li {
     padding: 30px 80px 0 0;
     color: #666; }
   #alerts .copy p.btn-holder {
     margin-top: 40px; }
+
+#hr {
+  background: #fff; }
+  #hr .copy p.lead {
+    color: #999; }
 
 #proof {
   padding: 80px 0; }

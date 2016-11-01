@@ -1,6 +1,6 @@
 ---
-title: '2012-2014'
-subtitle:  'Another Interesting Adventure'
+title: '2016'
+subtitle:  'CivicMaker'
 img_path: '/img/artist/yellow200x200.png'
 ---
-You can also use it to list out facts about yourself. It doesn't have to be used as a timeline. This section can be anything you want
+With the power of the BowTie platform, CivicMaker was created to help municipalities better serve their citizens with fast, safer, no maintenance sites.
