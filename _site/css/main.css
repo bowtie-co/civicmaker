@@ -209,18 +209,19 @@ footer {
 
 #about-body {
   padding: 50px 15px; }
+  #about-body div.row:first-of-type {
+    padding-top: 0px; }
+  #about-body div {
+    padding: 50px 0; }
   #about-body h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center; }
   #about-body p {
     font-size: 1.3em;
     font-weight: 200;
     color: #777;
     text-align: left;
-    padding: 0px 50px 25px 50px; }
-  #about-body .row {
-    margin: 0px;
-    padding: 0px; }
+    padding: 0px 50px 20px 50px; }
 
 #about-alt {
   background: #ddd;
