@@ -1,12 +1,23 @@
-
+#navbar
+  height: 70px
+  padding: 15px 0
+  .brand
+    height: 40px
+    margin-left: 20px
+    img
+      height: 100%
+  .nav
+    margin-left: -20px
+.container
+  padding: 50px 15px 60px 0
 
 #hero
-  background: url(/img/Capitol.jpg)
-  background-position: center
+  background: url(/img/denver-capitol.jpg)
+  background-position: top center
   background-size: cover
   padding-top: 200px
-  padding-bottom: 100px
-  margin-top: -200px
+  padding-bottom: 250px
+  min-height: 550px
   h1
     text-align: center
     font-size: 4em
@@ -24,24 +35,42 @@
 
 #cta-bar
   padding: 5px 0
-  background: #bbb
-  p
-    margin-top: 12px
+  background: rgba(128,128,128,.9)
+  height: 150px
+  margin-top: -150px
+  .container
+    padding: 0 15px
+  img
+    width: 400px
+    margin: 20px auto
+    display: block
 
 #web-design, #hr
-  background: #bbb
-  padding: 50px 0
-  border-bottom: 1px solid #999
+  background: #DEE2E5
+  padding: 50px 15px
+  border-bottom: 1px solid #ddd
+  min-height: 470px
+  .laptop
+    margin-right: 0
+    padding-right: 0
+    img
+      position: absolute
+      max-height: 390px
+      height: auto
+      right: 0px
+      z-index: 5
+      margin-top: 50px
+  h2
+    font-size: 2.5em
+    line-height: 140%
+    color: #333
   .copy
-    h2
-      font-size: 2.5em
-      line-height: 140%
     p.lead
       padding-top: 30px
       padding-right: 80px
-      font-size: 1.5em
+      font-size: 1.25em
       font-weight: 200
-      color: #fff
+      color: #333
     ul
       li
         padding: 30px 80px 0 0
@@ -50,17 +79,17 @@
       margin-top: 40px
 
 #alerts
-  background: #fff
-  padding: 50px 0
-  border-bottom: 1px solid #999
+  height: 550px
+  border-bottom: 1px solid #ddd
   .copy
+    padding: 50px 0
     h2
       font-size: 2.5em
       line-height: 140%
     p.lead
       padding-top: 30px
-      padding-right: 80px
-      font-size: 1.5em
+      padding-right: 50px
+      font-size: 1.25em
       font-weight: 200
       color: #999
     ul
@@ -69,6 +98,15 @@
         color: #666
     p.btn-holder
       margin-top: 40px
+  .left-img
+    height: 550px
+    position: absolute
+    left: -40px
+    overflow: hidden
+    width: auto
+    img
+      height: calc(100%)
+      left: 0px
 
 #hr
   background: #fff
@@ -78,7 +116,7 @@
 
 
 #proof
-  padding: 80px 0
+  padding: 80px 15px
   h2
     font-size: 2.2em
     text-align: center
@@ -88,7 +126,7 @@
     text-align: center
 
 #testimonial
-  padding: 220px 0
+  padding: 220px 15px
   background: url("http://placehold.it/1440x800")
   background-size: cover
   h3
@@ -105,7 +143,7 @@
     margin-top: 30px
 
 #stats
-  padding: 30px
+  padding: 30px 15px
   h2
     font-size: 3em
     text-align: center
@@ -119,7 +157,7 @@
       font-size: 1.3em
   border-bottom: 1px solid #ddd
 #about-body
-  padding: 50px 0
+  padding: 50px 15px
   h2
     font-size: 3em
     text-align: center
@@ -135,7 +173,7 @@
 
 #about-alt
   background: #ddd
-  padding: 30px 0 0 0    
+  padding: 30px 0 0 0
 
 #case-studies
   text-align: center
@@ -153,7 +191,7 @@
         padding: 20px
 
 #service-intro
-  padding: 50px
+  padding: 50px 15px
   border-bottom: 1px solid #ddd
   h2
     text-align: center
@@ -165,12 +203,12 @@
     font-weight: 200
 
 #Life-Cycle
-  padding: 50px
+  padding: 50px 15px
   background: #ddd
 
 
 #service-features
-  padding: 50px
+  padding: 50px 15px
   h2
     text-align: center
     margin-bottom: 60px
@@ -187,7 +225,7 @@
     p
       text-align: center
       padding: 30px
-    
+
 
 .phone-feature
   background: url(http://placehold.it/1440x500)
@@ -208,6 +246,6 @@
     text-align: right
 
 #form-holder
-  padding: 50px
+  padding: 50px 15px
   .form-row
     margin-bottom: 30px
