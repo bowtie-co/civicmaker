@@ -234,15 +234,34 @@ footer {
     #stats .stat p.body {
       font-size: 1.3em; }
 
+#numbers {
+  padding: 30px 15px;
+  background: #bbb;
+  color: #fff;
+  border-bottom: 1px solid #bbb; }
+  #numbers h2 {
+    font-size: 3em;
+    text-align: center; }
+  #numbers .stat {
+    padding: 20px 40px;
+    text-align: center; }
+    #numbers .stat p.number-lg {
+      font-size: 5em;
+      font-weight: 200; }
+    #numbers .stat p.body {
+      font-size: 1.3em; }
+
 #about-body {
-  padding: 50px 15px; }
+  padding: 0px 15px;
+  height: 550px; }
   #about-body div.row:first-of-type {
     padding-top: 0px; }
   #about-body div {
-    padding: 50px 0; }
+    padding: 0px 0; }
   #about-body h2 {
     font-size: 2.5em;
-    text-align: center; }
+    text-align: center;
+    padding: 20px; }
   #about-body p {
     font-size: 1.3em;
     font-weight: 200;
