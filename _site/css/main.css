@@ -114,6 +114,13 @@ footer {
   position: relative;
   width: 100%;
   padding: 12px 0; }
+  #logo-bar .feature {
+    text-align: center; }
+    #logo-bar .feature img {
+      border-radius: 50%;
+      border: 3px solid #ddd;
+      height: 150px;
+      width: 150px; }
 
 #cta-bar {
   padding: 5px 0;
