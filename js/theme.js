@@ -1,5 +1,3 @@
-(function(){
-
 // animate icon/img appearance on scroll
 $(window).scroll(function() {
   $('.animateEntry').each(function(){
@@ -11,4 +9,3 @@ $(window).scroll(function() {
     }
   });
 });
-}
