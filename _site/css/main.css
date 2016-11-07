@@ -67,6 +67,9 @@ footer {
 .container {
   padding: 50px 15px 60px 0; }
 
+.animateEntry, .animateEntryImg, .animateEntryL, .animateEntryC, .animateEntryR {
+  opacity: 0; }
+
 #hero {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(/img/denver-capitol.jpg);
   background-position: top center;
