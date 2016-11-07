@@ -31,7 +31,7 @@ header {
 footer {
   padding: 20px 0;
   text-align: center;
-  background: #f7f7f7; }
+  background: #ECE9E9; }
   footer .icons {
     padding: 50px 0; }
     footer .icons img {
@@ -67,7 +67,7 @@ footer {
 .container {
   padding: 50px 15px 60px 0; }
 
-.animateEntry, .animateEntryImg, .animateEntryL, .animateEntryC, .animateEntryR {
+.animateEntry, .animateEntryLeft, .animateEntryRight {
   opacity: 0; }
 
 #hero {
@@ -138,7 +138,7 @@ footer {
     display: block; }
 
 #web-design, #hr {
-  background: #DEE2E5;
+  background: #F4F3F2;
   padding: 50px 15px;
   border-bottom: 1px solid #ddd;
   min-height: 470px; }
@@ -151,7 +151,7 @@ footer {
       height: auto;
       right: 0px;
       z-index: 5;
-      margin-top: 50px; }
+      margin-top: 55px; }
   #web-design h2, #hr h2 {
     font-size: 2.5em;
     line-height: 140%;
@@ -169,6 +169,8 @@ footer {
     margin-top: 40px; }
 
 #alerts {
+  width: 100%;
+  overflow-x: hidden;
   height: 550px;
   border-bottom: 1px solid #ddd; }
   #alerts .copy {
@@ -197,19 +199,26 @@ footer {
       height: calc(100%);
       left: 0px; }
 
-#hr {
-  background: #fff; }
-  #hr .copy p.lead {
-    color: #999; }
+#hr .copy p.lead {
+  color: #999; }
 
 #proof {
-  padding: 80px 15px; }
+  padding: 50px 15px;
+  border-bottom: 1px solid #ddd; }
   #proof h2 {
     font-size: 2.2em;
     text-align: center;
     line-height: 140%; }
   #proof p.lead {
     padding: 40px 0;
+    text-align: center; }
+  #proof .col-sm-4 {
+    text-align: center; }
+    #proof .col-sm-4 img {
+      max-width: 150px;
+      width: 100%;
+      margin: 30px auto; }
+  #proof .btn-holder {
     text-align: center; }
 
 #testimonial {
@@ -285,7 +294,7 @@ footer {
 
 #about-innovation {
   height: 550px;
-  background: #ddd; }
+  background: #F4F3F2; }
   #about-innovation h2 {
     font-size: 2.2em;
     text-align: center;
@@ -358,7 +367,7 @@ footer {
 
 #Life-Cycle {
   padding: 40px 15px;
-  background: #ddd; }
+  background: #F4F3F2; }
   #Life-Cycle h2 {
     text-align: center;
     font-size: 3em;
@@ -423,10 +432,11 @@ footer {
 @media all and (max-width: 850px) {
   #web-design .laptop img, #hr .laptop img {
     max-width: 500px;
-    margin-top: 90px; } }
+    margin-top: 130px; } }
 @media all and (max-width: 767px) {
   #alerts {
-    height: auto; }
+    height: auto;
+    text-align: center; }
     #alerts .left-img {
       left: 0;
       width: 100%;
@@ -438,14 +448,19 @@ footer {
     #alerts .copy {
       padding: 20px 30px 50px; }
       #alerts .copy p.lead {
-        padding-right: 0; } }
-#web-design .laptop img, #hr .laptop img {
-  max-width: 500px;
-  margin-top: 90px;
-  position: relative;
-  margin: 20px auto -50px;
-  display: block; }
+        padding-right: 0; }
 
+  #web-design, #hr {
+    padding: 50px 30px;
+    text-align: center; }
+    #web-design .copy p.lead, #hr .copy p.lead {
+      padding-right: inherit; }
+    #web-design .laptop img, #hr .laptop img {
+      max-width: 500px;
+      margin-top: 90px;
+      position: relative;
+      margin: 20px auto -50px;
+      display: block; } }
 @media all and (max-width: 480px) {
   #alerts .left-img img {
     margin: -80px 0 -60px 0; } }

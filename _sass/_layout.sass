@@ -14,10 +14,9 @@
 // .animatedImg
 //   visibility:hidden
 
-.animateEntry, .animateEntryImg, .animateEntryL, .animateEntryC, .animateEntryR
-  // visibility:hidden
+.animateEntry, .animateEntryLeft, .animateEntryRight
+  visibility:hidden
   opacity: 0
-
 
 #hero
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(/img/denver-capitol.jpg)
@@ -87,7 +86,7 @@
     display: block
 
 #web-design, #hr
-  background: #DEE2E5
+  background: #F4F3F2
   padding: 50px 15px
   border-bottom: 1px solid #ddd
   min-height: 470px
@@ -100,7 +99,7 @@
       height: auto
       right: 0px
       z-index: 5
-      margin-top: 50px
+      margin-top: 55px
   h2
     font-size: 2.5em
     line-height: 140%
@@ -120,6 +119,8 @@
       margin-top: 40px
 
 #alerts
+  width: 100%
+  overflow-x: hidden
   height: 550px
   border-bottom: 1px solid #ddd
   .copy
@@ -150,20 +151,29 @@
       left: 0px
 
 #hr
-  background: #fff
   .copy
     p.lead
       color: #999
 
 
 #proof
-  padding: 80px 15px
+  padding: 50px 15px
+  border-bottom: 1px solid #ddd
   h2
     font-size: 2.2em
     text-align: center
     line-height: 140%
   p.lead
     padding: 40px 0
+    text-align: center
+  .col-sm-4
+    text-align: center
+    img
+      // box-shadow: 2px 1px 5px rgba(0,0,0,.2)
+      max-width: 150px
+      width: 100%
+      margin: 30px auto
+  .btn-holder
     text-align: center
 
 #testimonial
@@ -239,7 +249,7 @@
 
 #about-innovation
   height: 550px
-  background: #ddd
+  background: #F4F3F2
   h2
     font-size: 2.2em
     text-align: center
@@ -285,40 +295,6 @@
       height: calc(100%)
       left: 0px
 
-// #about-body
-  padding: 0px 15px
-  div.row:first-of-type
-    padding-top: 0px
-  div
-    padding: 0px 0
-    height: auto
-  h2
-    font-size: 2.5em
-    text-align: center
-  p
-    font-size: 1.3em
-    font-weight: 200
-    color: #777
-    text-align: left
-    padding: 0px 20px 20px 20px
-  // .row
-    // padding: 40px 0
-    // margin: 0px
-
-//.about-success,
-  .left-img
-    height: 550px
-    position: absolute
-    left: -40px
-    overflow: hidden
-    width: auto
-    img
-      height: calc(100%)
-      left: 0px
-
-//.about-innovation
-  background: #ddd
-
 #case-studies
   text-align: center
   .cs-row
@@ -348,7 +324,7 @@
 
 #Life-Cycle
   padding: 40px 15px
-  background: #ddd
+  background: #F4F3F2
   h2
     text-align: center
     font-size: 3em
