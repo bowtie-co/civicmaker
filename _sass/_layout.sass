@@ -4,22 +4,26 @@
   .brand
     height: 40px
     margin-left: 20px
+    width: auto
     img
       height: 100%
   .nav
-    margin-left: -20px
+    // margin-left: -20px
 .container
   padding: 50px 15px 60px 0
 
-// .animatedImg
-//   visibility:hidden
 
 .animateEntry, .animateEntryLeft, .animateEntryRight
   visibility:hidden
   opacity: 0
+.process-pic
+  background: url(/img/process-group.jpg)
+  background-position: center center
+  background-size: cover
+  min-height: 600px
 
 #hero
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(/img/denver-capitol.jpg)
+  background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.55)), url(/img/denver-capitol.jpg)
   background-position: top center
   background-size: cover
   padding-top: 200px
@@ -61,18 +65,22 @@
     max-width: 100%
 
 #logo-bar
-  background: #eee
+  background: #F4F3F2
   position: relative
   width: 100%
-  padding: 12px 0
+  padding: 0px
+  .container-fluid
+    padding: 20px 15px
   .feature
     text-align: center
     img
-      border-radius: 50%
-      border: 3px solid #ddd
-      height: 150px
-      width: 150px
-
+      max-height: 100px
+      max-width: 100px
+      margin: 0 auto
+      display: block
+    p
+      font-size: .8em
+      text-align: center
 #cta-bar
   padding: 5px 0
   background: rgba(128,128,128,.9)
@@ -261,9 +269,10 @@
     text-align: left
     padding: 0px 20px 20px 20px
   .right-img
-    padding-right: -30px
+    padding-right: 0
     height: 550px
     overflow: hidden
+    float: right
     img
       height: calc(100%)
 
@@ -342,9 +351,11 @@
     text-align: center
     img
       border-radius: 50%
-      border: 3px solid #ddd
-      height: 100px
-      width: 100px
+      border: 1px solid #ddd
+      max-height: 100px
+      max-width: 100px
+      margin: 0 auto
+      display: block
     h3
       text-align: center
       margin-top: 20px

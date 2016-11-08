@@ -58,11 +58,10 @@ footer {
   padding: 15px 0; }
   #navbar .brand {
     height: 40px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    width: auto; }
     #navbar .brand img {
       height: 100%; }
-  #navbar .nav {
-    margin-left: -20px; }
 
 .container {
   padding: 50px 15px 60px 0; }
@@ -70,8 +69,14 @@ footer {
 .animateEntry, .animateEntryLeft, .animateEntryRight {
   opacity: 0; }
 
+.process-pic {
+  background: url(/img/process-group.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 600px; }
+
 #hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(/img/denver-capitol.jpg);
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.55)), url(/img/denver-capitol.jpg);
   background-position: top center;
   background-size: cover;
   padding-top: 200px;
@@ -113,17 +118,22 @@ footer {
     max-width: 100%; }
 
 #logo-bar {
-  background: #eee;
+  background: #F4F3F2;
   position: relative;
   width: 100%;
-  padding: 12px 0; }
+  padding: 0px; }
+  #logo-bar .container-fluid {
+    padding: 20px 15px; }
   #logo-bar .feature {
     text-align: center; }
     #logo-bar .feature img {
-      border-radius: 50%;
-      border: 3px solid #ddd;
-      height: 150px;
-      width: 150px; }
+      max-height: 100px;
+      max-width: 100px;
+      margin: 0 auto;
+      display: block; }
+    #logo-bar .feature p {
+      font-size: 0.8em;
+      text-align: center; }
 
 #cta-bar {
   padding: 5px 0;
@@ -306,9 +316,10 @@ footer {
     text-align: left;
     padding: 0px 20px 20px 20px; }
   #about-innovation .right-img {
-    padding-right: -30px;
+    padding-right: 0;
     height: 550px;
-    overflow: hidden; }
+    overflow: hidden;
+    float: right; }
     #about-innovation .right-img img {
       height: calc(100%); }
 
@@ -383,9 +394,11 @@ footer {
     text-align: center; }
     #service-features .feature img {
       border-radius: 50%;
-      border: 3px solid #ddd;
-      height: 100px;
-      width: 100px; }
+      border: 1px solid #ddd;
+      max-height: 100px;
+      max-width: 100px;
+      margin: 0 auto;
+      display: block; }
     #service-features .feature h3 {
       text-align: center;
       margin-top: 20px;
@@ -417,6 +430,22 @@ footer {
   #form-holder .form-row {
     margin-bottom: 30px; }
 
+@media all and (min-width: 1490px) {
+  #alerts .left-img {
+    left: -175px; }
+
+  #web-design, #hr {
+    min-height: 480px; }
+    #web-design .laptop img, #hr .laptop img {
+      position: absolute;
+      max-height: 490px;
+      right: 0px;
+      z-index: 5;
+      margin-top: -40px; }
+
+  .row {
+    max-width: 1200px;
+    margin: 0 auto; } }
 @media all and (max-width: 1024px) {
   #alerts .left-img {
     left: -175px; }
@@ -434,6 +463,20 @@ footer {
     max-width: 500px;
     margin-top: 130px; } }
 @media all and (max-width: 767px) {
+  #about-success, #about-innovation, #about-support {
+    height: auto; }
+    #about-success .left-img, #about-success .right-img, #about-success img, #about-innovation .left-img, #about-innovation .right-img, #about-innovation img, #about-support .left-img, #about-support .right-img, #about-support img {
+      height: auto;
+      position: relative;
+      width: 100%;
+      margin: 0;
+      left: 0;
+      right: 0;
+      padding: 0; }
+      #about-success .left-img img, #about-success .right-img img, #about-success img img, #about-innovation .left-img img, #about-innovation .right-img img, #about-innovation img img, #about-support .left-img img, #about-support .right-img img, #about-support img img {
+        width: 100%;
+        height: auto; }
+
   #alerts {
     height: auto;
     text-align: center; }
@@ -461,6 +504,39 @@ footer {
       position: relative;
       margin: 20px auto -50px;
       display: block; } }
+@media all and (max-width: 600px) {
+  #page-intro .title-bar {
+    padding-top: 50px; }
+    #page-intro .title-bar h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #FFF; }
+
+  #hero h1, #service-intro h2, #service-features h2, #Life-Cycle h2, #numbers h2 {
+    font-size: 2.5em; }
+
+  #service-intro p {
+    font-size: 1.25em; }
+
+  #navbar .nav {
+    padding-left: 40%;
+    margin-left: 0;
+    width: 100%; }
+
+  .container {
+    padding: 50px 15px 60px 0; }
+
+  header ul {
+    margin-top: -40px;
+    text-align: right; }
+    header ul li {
+      display: inline-block;
+      margin-top: 12px;
+      margin-right: 30px;
+      width: 60%; } }
 @media all and (max-width: 480px) {
+  #page-intro .title-bar {
+    height: auto; }
+
   #alerts .left-img img {
     margin: -80px 0 -60px 0; } }
