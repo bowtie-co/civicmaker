@@ -16,6 +16,16 @@
 .animateEntry, .animateEntryLeft, .animateEntryRight
   visibility:hidden
   opacity: 0
+
+.animated.flash
+  -webkit-animation-duration: 3s
+  animation-duration: 3s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  -webkit-animation-iteration-count: 2
+  animation-iteration-count: 2
+
+
 .process-pic
   background: url(/img/process-group.jpg)
   background-position: center center
@@ -85,14 +95,19 @@
 #cta-bar
   padding: 5px 0
   background: rgba(128,128,128,.9)
-  height: 150px
-  margin-top: -150px
+  height: 155px
+  margin-top: -155px
+  text-align: center
   .container
     padding: 0 15px
   img
     width: 400px
-    margin: 20px auto
+    margin: 20px auto 0
     display: block
+  i
+    display: block
+    color: #ccc
+    font-size: 1.2em
 
 #web-design, #hr
   background: #F4F3F2

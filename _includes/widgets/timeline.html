@@ -9,9 +9,9 @@
         {% for item in timeline %}
         {% capture li_cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
         {% if li_cycle == 'odd'%}
-        <li>
+        <li class="animateEntryLeft">
         {% else %}
-        <li class="timeline-inverted">
+        <li class="timeline-inverted animateEntryRight">
         {% endif %}
           <div class="timeline-image">
             <img class="img-circle img-responsive" src="{{item.img_path}}" alt="" />
