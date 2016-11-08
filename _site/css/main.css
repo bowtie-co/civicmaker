@@ -149,9 +149,9 @@ footer {
 
 #web-design, #hr {
   background: #F4F3F2;
-  padding: 50px 15px;
+  padding: 70px 15px;
   border-bottom: 1px solid #ddd;
-  min-height: 470px; }
+  min-height: 500px; }
   #web-design .laptop, #hr .laptop {
     margin-right: 0;
     padding-right: 0; }
@@ -184,7 +184,7 @@ footer {
   height: 550px;
   border-bottom: 1px solid #ddd; }
   #alerts .copy {
-    padding: 50px 0; }
+    padding: 70px 0; }
     #alerts .copy h2 {
       font-size: 2.5em;
       line-height: 140%; }
@@ -213,7 +213,7 @@ footer {
   color: #999; }
 
 #proof {
-  padding: 50px 15px;
+  padding: 70px 15px;
   border-bottom: 1px solid #ddd; }
   #proof h2 {
     font-size: 2.2em;
@@ -252,8 +252,9 @@ footer {
   padding: 30px 15px;
   border-bottom: 1px solid #ddd; }
   #stats h2 {
-    font-size: 3em;
-    text-align: center; }
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px; }
   #stats .stat {
     padding: 20px 40px;
     text-align: center; }
@@ -269,8 +270,9 @@ footer {
   color: #fff;
   border-bottom: 1px solid #bbb; }
   #numbers h2 {
-    font-size: 3em;
-    text-align: center; }
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px; }
   #numbers .stat {
     padding: 20px 40px;
     text-align: center; }
@@ -280,75 +282,51 @@ footer {
     #numbers .stat p.body {
       font-size: 1.3em; }
 
-#about-success {
-  height: 550px; }
-  #about-success h2 {
+#about-success, #about-innovation, #about-support {
+  width: 100%;
+  min-height: 500px;
+  overflow-x: hidden;
+  margin: 0; }
+  #about-success .col-md-7 .copy, #about-innovation .col-md-7 .copy, #about-support .col-md-7 .copy {
+    padding: 30px; }
+  #about-success h2, #about-innovation h2, #about-support h2 {
     font-size: 2.2em;
     text-align: center;
     padding: 30px 0; }
-  #about-success p {
+  #about-success p, #about-innovation p, #about-support p {
     font-size: 1.1em;
     font-weight: 200;
     color: #777;
     text-align: left;
     padding: 0px 20px 20px 20px; }
-  #about-success .left-img {
-    height: 550px;
-    position: absolute;
-    left: -40px;
-    overflow: hidden;
-    width: auto; }
-    #about-success .left-img img {
-      height: calc(100%);
-      left: 0px; }
+  #about-success .row, #about-innovation .row, #about-support .row {
+    margin-left: 0;
+    margin-right: 0; }
+  #about-success .left-img, #about-success .right-img, #about-innovation .left-img, #about-innovation .right-img, #about-support .left-img, #about-support .right-img {
+    background-position: center center !important;
+    background-size: cover !important;
+    height: 100%;
+    min-height: 560px;
+    background-repeat: no-repeat !important; }
+  #about-success .left-img, #about-innovation .left-img, #about-support .left-img {
+    float: left; }
+  #about-success .right-img, #about-innovation .right-img, #about-support .right-img {
+    float: right; }
+    #about-success .right-img img, #about-innovation .right-img img, #about-support .right-img img {
+      background-repeat: no-repeat; }
+
+#about-success .left-img {
+  background: url(/img/shaking-hands-square.jpg); }
 
 #about-innovation {
-  height: 550px;
   background: #F4F3F2; }
-  #about-innovation h2 {
-    font-size: 2.2em;
-    text-align: center;
-    padding: 30px 0; }
-  #about-innovation p {
-    font-size: 1.1em;
-    font-weight: 200;
-    color: #777;
-    text-align: left;
-    padding: 0px 20px 20px 20px; }
   #about-innovation .right-img {
-    padding-right: 0;
-    height: 550px;
-    overflow: hidden;
-    float: right; }
-    #about-innovation .right-img img {
-      height: calc(100%); }
+    background: url(/img/google_analytics.jpg); }
 
 #about-support {
-  height: 550px; }
-  #about-support h2 {
-    font-size: 2.2em;
-    text-align: center;
-    padding: 30px 0; }
-  #about-support p {
-    font-size: 1.1em;
-    font-weight: 200;
-    color: #777;
-    text-align: left;
-    padding: 0px 20px 20px 20px; }
-  #about-support img {
-    margin-left: -30px;
-    height: 550px;
-    overflow: hidden;
-    width: auto; }
+  background: #FFF; }
   #about-support .left-img {
-    height: 550px;
-    position: static;
-    left: -40px;
-    overflow: hidden;
-    width: auto; }
-    #about-support .left-img img {
-      height: calc(100%);
-      left: 0px; }
+    background: url(/img/customer-service.jpg); }
 
 #case-studies {
   text-align: center; }
@@ -369,8 +347,8 @@ footer {
   border-bottom: 1px solid #ddd; }
   #service-intro h2 {
     text-align: center;
-    font-size: 4em;
-    margin-bottom: 50px; }
+    font-size: 2.5em;
+    margin-bottom: 30px; }
   #service-intro p {
     text-align: center;
     font-size: 1.6em;
@@ -381,15 +359,24 @@ footer {
   background: #F4F3F2; }
   #Life-Cycle h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
+    margin-bottom: 30px; }
+  #Life-Cycle .col-md-6 {
     margin-bottom: 60px; }
+  #Life-Cycle h3 {
+    text-align: center;
+    margin: 1em 0.25em; }
+  #Life-Cycle ul li {
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: 300; }
 
 #service-features {
   padding: 50px 15px; }
   #service-features h2 {
     text-align: center;
-    margin-bottom: 60px;
-    font-size: 3em; }
+    margin-bottom: 40px;
+    font-size: 2.5em; }
   #service-features .feature {
     text-align: center; }
     #service-features .feature img {
@@ -402,7 +389,7 @@ footer {
     #service-features .feature h3 {
       text-align: center;
       margin-top: 20px;
-      font-size: 1.2em; }
+      font-size: 1.5em; }
     #service-features .feature p {
       text-align: center;
       padding: 10px; }
@@ -443,7 +430,7 @@ footer {
       z-index: 5;
       margin-top: -40px; }
 
-  .row {
+  #logo-bar .row {
     max-width: 1200px;
     margin: 0 auto; } }
 @media all and (max-width: 1024px) {
@@ -457,26 +444,18 @@ footer {
       max-width: 560px;
       right: 0px;
       z-index: 5;
-      margin-top: 90px; } }
+      margin-top: 90px; }
+
+  #about-success .left-img, #about-success .right-img, #about-innovation .left-img, #about-innovation .right-img, #about-support .left-img, #about-support .right-img {
+    min-height: 605px; } }
 @media all and (max-width: 850px) {
   #web-design .laptop img, #hr .laptop img {
     max-width: 500px;
-    margin-top: 130px; } }
-@media all and (max-width: 767px) {
-  #about-success, #about-innovation, #about-support {
-    height: auto; }
-    #about-success .left-img, #about-success .right-img, #about-success img, #about-innovation .left-img, #about-innovation .right-img, #about-innovation img, #about-support .left-img, #about-support .right-img, #about-support img {
-      height: auto;
-      position: relative;
-      width: 100%;
-      margin: 0;
-      left: 0;
-      right: 0;
-      padding: 0; }
-      #about-success .left-img img, #about-success .right-img img, #about-success img img, #about-innovation .left-img img, #about-innovation .right-img img, #about-innovation img img, #about-support .left-img img, #about-support .right-img img, #about-support img img {
-        width: 100%;
-        height: auto; }
+    margin-top: 130px; }
 
+  #about-success .left-img, #about-success .right-img, #about-innovation .left-img, #about-innovation .right-img, #about-support .left-img, #about-support .right-img {
+    min-height: 670px; } }
+@media all and (max-width: 767px) {
   #alerts {
     height: auto;
     text-align: center; }
@@ -503,7 +482,11 @@ footer {
       margin-top: 90px;
       position: relative;
       margin: 20px auto -50px;
-      display: block; } }
+      display: block; }
+
+  #about-success .left-img, #about-success .right-img, #about-innovation .left-img, #about-innovation .right-img, #about-support .left-img, #about-support .right-img {
+    min-height: 370px;
+    float: none; } }
 @media all and (max-width: 600px) {
   #page-intro .title-bar {
     padding-top: 50px; }
