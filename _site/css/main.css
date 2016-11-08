@@ -480,7 +480,9 @@ footer {
       top: 0px;
       position: relative; }
       #alerts .left-img img {
-        margin: -100px 0 -120px 0; }
+        margin: -100px 0 -120px 0;
+        height: 100%;
+        width: auto; }
     #alerts .copy {
       padding: 20px 30px 50px; }
       #alerts .copy p.lead {
